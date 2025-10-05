@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #faf8ef;
+}
+
+#game-board {
+    width: 400px;
+    height: 400px;
+    background-color: #bbada0;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.tile {
+    background-color: #cdc1b4;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #776e65;
+    transition: 0.1s;
+}
+
+/* Pewarnaan untuk setiap nilai ubin (tile) */
+.t2 { background-color: #eee4da; color: #776e65; }
+.t4 { background-color: #ede0c8; color: #776e65; }
+.t8 { background-color: #f2b179; color: #f9f6f2; }
+.t16 { background-color: #f59563; color: #f9f6f2; }
+.t32 { background-color: #f67c5f; color: #f9f6f2; }
+.t64 { background-color: #f65e3b; color: #f9f6f2; }
+.t128 { background-color: #edcf72; color: #f9f6f2; font-size: 30px; }
+.t256 { background-color: #edcc61; color: #f9f6f2; font-size: 30px; }
+.t512 { background-color: #edc850; color: #f9f6f2; font-size: 30px; }
+.t1024 { background-color: #edc53f; color: #f9f6f2; font-size: 25px; }
+.t2048 { background-color: #edc22e; color: #f9f6f2; font-size: 25px; }
+
+/* Placeholder untuk ubin kosong */
+.tile:empty {
+    background-color: #cdc1b4;
+}
